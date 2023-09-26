@@ -7,7 +7,7 @@ function App() {
 	const [message, setMessage] = useState([]);
 
 	async function handleLogin(credentials) {
-		return await fetch("http://localhost:8080/api/login", {
+		return await fetch("/api/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
